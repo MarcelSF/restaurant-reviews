@@ -15,6 +15,10 @@
   <%= @restaurant.stars %>
 </p>
 
+<p>
+  <strong><%= link_to 'Click here to see the chef',  chef_restaurant_path(@restaurant) %></strong>
+</p>
+
 <h2>Reviews for this restaurant</h2>
   <ol>
     <% @restaurant.reviews.each do |review| %>
